@@ -1,4 +1,11 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div style="margin: 2em" class="container">
+
+  <carousel>
+    <ng-container *ngFor="let item of items;">
+      <ng-container *carouselItem>
+        <div class="item">{{item.title}}</div>
+      </ng-container>
+    </ng-container>
+  </carousel>
+
+</div>
